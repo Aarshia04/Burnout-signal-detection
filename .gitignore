@@ -14,3 +14,4 @@ data/raw/oulad/
 data/processed/
 models/
 reports/
+*.save
