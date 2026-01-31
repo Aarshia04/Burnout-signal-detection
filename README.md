@@ -2,7 +2,7 @@
 
 This project builds an **early-warning burnout risk model** using *real* multi-source student behaviour data from the **Open University Learning Analytics Dataset (OULAD)**.
 
-⚠️ **Important**: OULAD does not contain a direct “burnout” label. In this repo, we model **burnout risk as a proxy outcome**:
+
 - **burnout_label = 1** if the student’s `final_result` is **Withdrawn** or **Fail**
 - **burnout_label = 0** if `final_result` is **Pass** or **Distinction**
 
