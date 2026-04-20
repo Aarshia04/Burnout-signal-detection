@@ -1,0 +1,138 @@
+\begin{spacing}{1.5}
+
+
+\chapter{\MakeUppercase{Project Description and Goals}}
+\section{Literature review}
+
+
+
+A literature review is a structured and critical examination of existing research related to a specific domain. In this project, the focus is on prior work in learning analytics, student behavior analysis, and early prediction of academic performance and dropout risk.
+
+The use of learning analytics datasets has significantly advanced research in this area. One of the most widely used datasets is the Open University Learning Analytics Dataset (OULAD), introduced by Kuzilek, J., Hlosta, M., and Zdrahal, Z.. This dataset provides detailed information on student interactions, including virtual learning environment (VLE) activity, assessment results, and demographic data, enabling large-scale analysis of student engagement patterns (Kuzilek et al., 2017).
+
+Several studies have shown that early behavioral indicators such as login frequency, time spent on learning platforms, and assignment submission patterns are strong predictors of academic outcomes (Tempelaar et al., 2015; Romero and Ventura, 2010). These features are commonly used in predictive models to identify students at risk of poor performance or dropout.
+
+Machine learning techniques have been widely applied in this domain. Models such as Logistic Regression, Random Forest, Support Vector Machines (SVM), and Gradient Boosting are frequently used for classification tasks in educational data mining (Kotsiantis et al., 2004; Ahmad et al., 2019). Ensemble methods like Random Forest and Gradient Boosting often provide higher accuracy due to their ability to capture complex patterns in data. However, simpler models such as Logistic Regression remain important due to their interpretability and transparency, which are critical in educational decision-making systems.
+
+Traditionally, most research has focused on predicting final academic outcomes, such as pass/fail or dropout (Dekker et al., 2009). More recently, there has been a shift towards developing early warning systems, which aim to detect at-risk students during the initial weeks of a course (Arnold and Pistilli, 2012). Early detection is essential, as it enables timely intervention strategies such as academic support, mentoring, and counseling.
+
+Feature engineering has also been identified as a key component in improving predictive performance. Researchers have developed derived features such as engagement scores, completion ratios, and behavioral trends, which provide more meaningful representations of student activity (Baker and Inventado, 2014).
+
+Despite these advancements, challenges remain in ensuring model generalization, handling missing data, and maintaining ethical use of student information. This project builds upon existing research by focusing on early-stage burnout detection using multi-source behavioral data, while balancing model performance with interpretability for practical academic use.
+\paragraph{}
+
+\section{Research Gap}
+
+\begin{itemize}
+    \item Research in the area mostly concerns itself with predicting the end result (pass/fail or dropout).
+
+\item No emphasis on prediction based on early-stage data (first week(s)).
+
+\item Not much research into academic burnout specifically as an issue.
+
+\item The high importance put on accuracy over transparency means many of the proposed methods are difficult to implement in practice.
+
+\item Multi-data source data (engagement, assessment, activities) is not being exploited optimally.
+
+\item Practical considerations, such as noisy data and missing information, have been largely ignored.
+
+\item Too little attention to developing warning systems in practice.
+
+\end{itemize}
+
+\paragraph{}
+
+
+
+\section{Objectives}
+The project revolves around some of the following objectives:
+\begin{itemize}
+    \item Behavioral analysis of the students based on OULAD data collection.
+
+\item Feature engineering to develop features that will indicate early warning signs of burnout.
+
+\item Development of various types of machine learning algorithms.
+
+\item Performance evaluation of the machine learning models through measures like AUC-ROC scores and F1 scores.
+
+\item Prediction of students who suffer from or are at risk of burning out by making predictions with their data collected for, say, four weeks.
+
+\end{itemize}
+
+
+\section{Problem statement}
+Academic burnout has been a growing concern among students because it usually leads to poor academic performance and eventually withdrawal from the institution. Traditional methods tend to detect the problem too late, when the damage has already been done.
+
+\textbf{The project aims to address the issue of:}
+
+\begin{itemize}
+    \item Designing a machine learning algorithm capable of predicting 
+students who are prone to academic burnout based on 
+behavior.
+\end{itemize}
+
+\textbf{This algorithm must be capable of:}
+\begin{itemize}
+    \item  Utilizing early behavior data 
+\item Predicting academic burnout
+\item Allowing early intervention
+\end{itemize}
+
+
+
+
+\section{Project Plan}
+\paragraph{}
+This project involves a pipeline-based structure as follows:
+
+\begin{enumerate}
+
+\item \textbf{Data Gathering}
+\begin{itemize}
+    \item Gather data from the OULAD dataset comprising student interactions
+\end{itemize}
+
+\item \textbf{Data Cleaning}
+\begin{itemize}
+    \item Dealing with missing values
+    \item Cleaning the gathered data to ensure its usability for analysis purposes
+\end{itemize}
+
+\item \textbf{Feature Generation}
+\begin{itemize}
+    \item Generating features including engagement score, assignment distribution, and activity levels
+    \item Prioritize early week data (first 4 weeks data)
+\end{itemize}
+
+\item \textbf{Model Training}
+\begin{itemize}
+    \item Logistic Regression
+    \item Random Forest
+    \item Gradient Boosting
+    \item Support Vector Machine (SVM)
+\end{itemize}
+
+\item \textbf{Model Evaluation}
+\begin{itemize}
+    \item Evaluation is based on the following criteria:
+    \item AUC-ROC
+    \item F1 Score
+    \item Cross-validation technique
+\end{itemize}
+
+\item \textbf{Prediction System}
+\begin{itemize}
+    \item Prediction of students’ burnout risks
+    \item Categorize students depending on their risk levels
+\end{itemize}
+
+\item \textbf{Results Analysis}
+\begin{itemize}
+    \item Choose the best performing model
+    \item Interpretation of the findings
+\end{itemize}
+\end{enumerate}
+
+
+
+\end{spacing}
