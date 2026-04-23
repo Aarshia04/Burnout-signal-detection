@@ -1,0 +1,108 @@
+\documentclass{VITSCOPEThesis}
+\input{acronym.tex} % for Symbols and notation
+\begin{document}
+	\pagestyle{plain}
+	\pagenumbering{roman}
+	%-----------------------------------------------------------------
+	% Table of contents include List of Tables, Figures, Abbreviations, Symbols and Chapters.
+	\setcounter{page}{-1}
+	\tableofcontents
+	\newpage
+	\addcontentsline{toc}{section}{Executive Summary}
+	\input{execsummary.tex}
+	\newpage
+	\listoftables
+	\addcontentsline{toc}{section}{List of Tables}
+	\newpage
+	\listoffigures	
+	\addcontentsline{toc}{section}{List of Figures}
+	\newpage
+	\addcontentsline{toc}{section}{List of Abbreviations}
+	\printacronyms[include=abbr, name=List of Abbreviations]
+	\newpage
+	\addcontentsline{toc}{section}{List of Symbols}
+	\printacronyms[include=symbol, name=Symbols and Notations]
+	\newpage
+	%--------  Thesis contents -----------------------------------
+	\pagenumbering{arabic}
+	\setcounter{page}{1}
+	\include{chapters/chapter1}
+	\include{chapters/chapter2}
+	\include{chapters/chapter3}
+	\include{chapters/chapter4}
+	\include{chapters/chapter5}
+	\include{chapters/chapter6}
+	\include{chapters/chapter7} % included 
+	\include{chapters/chapter8} % included 
+	
+	%------ Bibliography ----------------------------------------
+	\begin{thebibliography}{15}
+
+\bibitem{ref1}
+J. Kuzilek, M. Hlosta, and Z. Zdrahal, “Open University Learning Analytics Dataset,” \textit{Scientific Data}, vol. 4, no. 1, 2017.
+
+\bibitem{ref2}
+D. Tempelaar, B. Rienties, and Q. Nguyen, “Subjective data, objective data and the role of self-regulation in learning analytics,” \textit{British Journal of Educational Technology}, vol. 46, no. 4, pp. 842–859, 2015.
+
+\bibitem{ref3}
+C. Romero and S. Ventura, “Educational data mining: A review of the state of the art,” \textit{IEEE Transactions on Systems, Man, and Cybernetics}, vol. 40, no. 6, pp. 601–618, 2010.
+
+\bibitem{ref4}
+S. B. Kotsiantis, C. Pierrakeas, and P. Pintelas, “Predicting students’ performance in distance learning using machine learning techniques,” \textit{Applied Artificial Intelligence}, vol. 18, no. 5, pp. 411–426, 2004.
+
+\bibitem{ref5}
+A. Ahmad, N. Ismail, and A. A. Aziz, “The prediction of students’ academic performance using classification data mining techniques,” \textit{Applied Mathematical Sciences}, vol. 9, no. 129, pp. 6415–6426, 2019.
+
+\bibitem{ref6}
+G. Dekker, M. Pechenizkiy, and J. Vleeshouwers, “Predicting students dropout: A case study,” in \textit{Proc. International Conference on Educational Data Mining}, 2009.
+
+\bibitem{ref7}
+K. E. Arnold and M. D. Pistilli, “Course signals at Purdue: Using learning analytics to increase student success,” in \textit{Proc. Learning Analytics and Knowledge Conference}, 2012.
+
+\bibitem{ref8}
+R. S. J. d. Baker and R. Inventado, “Educational data mining and learning analytics,” in \textit{Learning Analytics}, Springer, 2014, pp. 61–75.
+
+\bibitem{ref9}
+C. Maslach and M. P. Leiter, “Understanding the burnout experience: Recent research and its implications,” \textit{World Psychiatry}, vol. 15, no. 2, pp. 103–111, 2016.
+
+\bibitem{ref10}
+H. Schaufeli, W. B. Schaufeli, and D. Enzmann, “The burnout companion to study and practice: A critical analysis,” \textit{Taylor \& Francis}, 1998.
+
+\bibitem{ref11}
+T. Mikolov et al., “Efficient estimation of word representations in vector space,” \textit{arXiv preprint arXiv:1301.3781}, 2013.
+
+\bibitem{ref12}
+F. Pedregosa et al., “Scikit-learn: Machine learning in Python,” \textit{Journal of Machine Learning Research}, vol. 12, pp. 2825–2830, 2011.
+
+\bibitem{ref13}
+L. Breiman, “Random forests,” \textit{Machine Learning}, vol. 45, no. 1, pp. 5–32, 2001.
+
+\bibitem{ref14}
+J. Friedman, “Greedy function approximation: A gradient boosting machine,” \textit{Annals of Statistics}, vol. 29, no. 5, pp. 1189–1232, 2001.
+
+\bibitem{ref15}
+C. Cortes and V. Vapnik, “Support-vector networks,” \textit{Machine Learning}, vol. 20, no. 3, pp. 273–297, 1995.
+
+\bibitem{ref16}
+S. Jayaprakash, E. Moody, E. J. Lauría, J. R. Regan, and J. D. Baron, “Early alert of academically at-risk students: An open source analytics initiative,” \textit{Journal of Learning Analytics}, vol. 1, no. 1, pp. 6–47, 2014.
+
+\bibitem{ref17}
+M. S. Hussain, W. Zhu, W. Zhang, and S. M. Abidi, “Student engagement predictions in an e-learning system and their impact on student course assessment scores,” \textit{Computational Intelligence and Neuroscience}, 2018.
+
+\bibitem{ref18}
+A. S. Alharthi, “Student engagement and learning outcomes in higher education: A review,” \textit{International Journal of Educational Technology}, vol. 5, no. 2, pp. 45–52, 2019.
+
+\bibitem{ref19}
+E. T. Bradlow, D. Hutchinson, and P. S. Fader, “Behavioral analytics in education: Applications and challenges,” \textit{Journal of Educational Data Science}, vol. 3, no. 1, pp. 1–15, 2020.
+
+\bibitem{ref20}
+J. P. Campbell, P. B. DeBlois, and D. G. Oblinger, “Academic analytics: A new tool for a new era,” \textit{EDUCAUSE Review}, vol. 42, no. 4, pp. 40–57, 2007.
+
+\end{thebibliography} 
+	%------ Appendices ----------------------------------------
+	\newpage
+	\include{appendix/sourcecode}	% comment if not necessary
+	\newpage
+	\include{appendix/publication}	% comment if not necessary
+	
+\end{document}
